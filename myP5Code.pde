@@ -16,6 +16,16 @@ draw = function() {
     if(mousePressed){
         labelCanvas();
     }
+
+    if(mouseY < 200 && mousePressed){
+        fill(255,0,0);
+        rect(0, 0, 400, 200);
+
+    fill(0, 0, 0);
+    textSize(30);
+    text("Press me!", 145, 115);
+    }
+
 };
 
 var labelCanvas = function(){
